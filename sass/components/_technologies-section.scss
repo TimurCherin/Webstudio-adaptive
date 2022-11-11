@@ -1,0 +1,134 @@
+.technologies-section {
+
+    @media screen and (min-width: 480px) {
+        padding: 60px 15px;
+        width: 480px;
+        height: 1114px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 738px;
+        height: 524px;
+        padding: 15px 60px  ;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        padding: 94px 0px;
+        height: 439px;    
+    }
+
+
+    &__list {
+        justify-content: space-between;
+        height: 251px;
+        
+
+        @media screen and (min-width: 480px) {
+            display: block;
+        }
+        
+        @media screen and (min-width: 768px) {
+        
+        }
+        
+        @media screen and (min-width: 1140px) {
+        
+        }
+    }
+    
+    &__item {
+        width: 270px;
+        height: 101px;
+        text-align: left;
+        vertical-align: top;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 226px;
+        }
+        
+        @media screen and (min-width: 768px) {
+        
+        }
+        
+        @media screen and (min-width: 1140px) {
+        
+        }
+
+        &:not(:last-child) {
+            
+            @media screen and (min-width: 480px) {
+                margin-bottom: 30px;
+            }
+            
+            @media screen and (min-width: 768px) {
+            
+            }
+            
+            @media screen and (min-width: 1140px) {
+                margin-bottom: 0px;
+            }
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            background-color: #F5F4FA;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media screen and (min-width: 480px) {
+                width: 450px;
+                height: 120px;
+                margin: 30px 0px;
+            }
+            
+            @media screen and (min-width: 768px) {
+                width: 354px;
+            }
+            
+            @media screen and (min-width: 1140px) {
+                width: 270px;
+            }
+        }
+
+        &:nth-child(1)::before {
+            content: '';
+            background-image: url(../images/antenna_1.svg);
+        }
+        
+        &:nth-child(2)::before {
+            content: '';
+            background-image: url(../images/clock_1.svg);
+        }
+        
+        &:nth-child(3)::before {
+            content: '';
+            background-image: url(../images/diagram_1.svg);
+        }
+        
+        &:nth-child(4)::before {
+            content: '';
+            background-image: url(../images/astronaut_1.svg);
+        }
+    }
+    
+    &__title {
+        font-weight: 700;
+        font-size: 14px;    
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+        margin: 0px;
+    
+    }
+}

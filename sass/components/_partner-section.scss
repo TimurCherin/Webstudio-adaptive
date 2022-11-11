@@ -1,0 +1,117 @@
+.partner-section {
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        height: 513px;
+        display: block;
+        padding: 60px 0px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        padding: 94px 0px;
+    }
+
+    & ul {
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        
+        @media screen and (min-width: 480px) {
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #AFB1B8;
+            border-radius: 4px;
+            width: 210px;
+            height: 90px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            height: 90px;
+            width: 170px;
+        }
+
+        &:nth-child(odd) {
+            
+            @media screen and (min-width: 480px) {
+                margin-right: 30px;
+            }
+            
+            @media screen and (min-width: 768px) {
+                
+            }
+            
+            @media screen and (min-width: 1140px) {
+                
+            }
+    
+        }
+
+        &:nth-child(-n+4) {
+            
+            @media screen and (min-width: 480px) {
+                margin-bottom: 30px;
+            }
+            
+            @media screen and (min-width: 768px) {
+                
+            }
+            
+            @media screen and (min-width: 1140px) {
+                margin-bottom: 0px;
+            }
+        }
+
+        &:hover {
+            color: $main-color;
+            border-color: $main-color;
+            transition-duration: 500ms;
+            transition-delay: 250ms;
+        }
+        
+        &:hover svg {
+            fill: $main-color;
+            transition-duration: 500ms;
+            transition-delay: 250ms;
+        }
+        
+        &:not(:last-child) {
+
+            @media screen and (min-width: 480px) {
+                
+            }
+            
+            @media screen and (min-width: 768px) {
+                
+            }
+            
+            @media screen and (min-width: 1140px) {
+                margin-right: 30px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+    &__link {
+        color: #AFB1B8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+    }
+    
+    &__icon {
+        width: 106px;
+        height: 60px; 
+        fill: currentColor;
+    }
+}
+

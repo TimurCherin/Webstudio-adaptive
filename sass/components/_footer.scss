@@ -1,0 +1,235 @@
+.footer {
+
+    @media screen and (min-width: 480px) {
+        background-color: #2F303A;
+        width: 480px;
+        height: 603px;
+        padding: 60px 0px;
+        display: flex;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        padding: 72px 0px 60px 0px;
+    }
+
+&__icon-wrap {
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        height: 80px;
+        margin: 60px 0px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 218px;
+        height: 80px;
+    }
+
+    & h4 {
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+&__logo {
+    color: $base-color;
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin: 0px 0px 20px 0px;
+
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+
+    & span {
+        color: $main-color;
+    }
+}
+
+&__address {
+    color: $base-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+    margin-top: 20px;
+    font-style: normal;
+
+    @media screen and (min-width: 480px) {
+        
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+}
+
+&__contact {
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+}
+
+&__join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $base-color;
+}
+
+&__icon {
+    width: 44px;
+    height: 44px;
+    fill: $base-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 12px;
+    overflow: visible;
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    &:hover {
+        fill: $base-color;
+        background-color: $main-color;
+        transition-duration: 500ms;
+        transition-delay: 250ms;
+    }
+}
+}
+
+.feedback-form {
+    
+    @media screen and (min-width: 480px) {
+        height: 156px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+
+    &__title {
+        display: block;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $base-color;
+        margin-bottom: 20px;
+    }
+    
+    &__wrap {
+
+        @media screen and (min-width: 480px) {
+            display: block;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            display: flex;
+            height: 50px;
+        }
+    }
+    
+    &__input {
+        width: 450px;
+        height: 50px;
+        border-radius: 4px;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: #2F303A;
+        margin-right: 12px;
+        padding-left: 15px;
+        color: $base-color;
+    }
+    
+    &__button {
+        width: 200px;
+        height: 50px;
+        padding: 10px 28px 10px 29px;
+        background: $main-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+        letter-spacing: 0.06em;
+        color: $base-color;
+
+        @media screen and (min-width: 480px) {
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            margin-top: 0px;
+        }
+    }
+    
+    &__icon {
+        width: 22px;
+        height: 22px;
+        margin-left: 10px;
+        fill: $base-color;
+    }
+}
+.footer-container {
+    
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+}

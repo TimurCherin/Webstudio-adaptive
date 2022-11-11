@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+                                                <!-- header -->
+    <header class="header">
+        <div class="container header-container">
+            <nav>
+                <a href="./" class="header__logo"><span class="header__logo-color">Web</span>Studio</a> 
+                <ul class="header__list">
+                    <li class="header__item"><a href="./" class="header__link">Студія</a></li>
+                    <li class="header__item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
+                    <li class="header__item"><a href="#contact" class="header__link">Контакти</a></li>
+                </ul>
+            </nav>
+            <address class="header__address">
+                    <a href="mailto:info@devstudio.com" class="header__contact">
+                        <svg class="header__icon"><use href="./images/symbol-defs.svg#envelope"></use></svg>info@devstudio.com
+                    </a>
+                    <a href="tel:+380961111111" class="header__contact">
+                        <svg class="header__icon"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11
+                    </a>
+            </address>
+            <button type="button" class="header__mobile-menu">
+                <svg class="header__mobile-menu__icon"><use href="./images/symbol-defs.svg#icon-menu"></use></svg>
+            </button>
+        </div>
+    </header>
+                                                    <!-- main-section -->
+    <main>
+        <div class="main-indent"></div>                                                
+        <section class="main-section">
+            <div class="container main-section__container">
+                <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                <button type="button" class="main-section__button" data-open-modal>Замовити послугу</button>
+            </div>
+        </section>
+        <div class="backdrop is-hidden" data-backdrop>
+                <form class="modal-form">
+                    <button class="modal-form__close-button" data-close-modal>
+                        <svg class="modal-form__close-icon"><use href="./images/symbol-defs.svg#modal-close"></use></svg>
+                    </button>
+                    <p class="modal-form__title">Залиште свої дані, ми Вам зателефонуємо</p>
+                    <label class="modal-form__label">
+                        Ім'я
+                        <span class="modal-form__span">
+                            <input class="modal-form__input" type="text" name="username" autofocus />
+                            <svg class="modal-form__icon"><use href="./images/symbol-defs.svg#modal-person"></use></svg>
+                        </span>
+                    </label>
+                    <label class="modal-form__label">
+                        Телефон
+                        <span class="modal-form__span">
+                            <input class="modal-form__input" type="tel" name="phone_number" />
+                            <svg class="modal-form__icon"><use href="./images/symbol-defs.svg#modal-phone"></use></svg>
+                        </span>
+                    </label>
+                    <label class="modal-form__label">
+                    Пошта
+                    <span class="modal-form__span">
+                        <input class="modal-form__input" type="email" name="email" />
+                        <svg class="modal-form__icon"><use href="./images/symbol-defs.svg#modal-email"></use></svg>
+                    </span>      
+                    </label>    
+                    <label class="modal-form__label">
+                        Коментарі
+                        <textarea class="modal-form__text__area" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="modal-form__checkbox">
+                        <input type="checkbox" name="" checked />
+                        <span>Погоджуюсь з розсилкою i приймаю <a class="modal-form__checkbox__link" href="./">Умови договору</a></span>
+                    </label>
+                <button class="modal-form__button" type="submit">Надіслати</button>
+                </form>
+        </div>
+                                                        <!-- technologies-section -->
+        <section class="technologies-section">
+            <div class="container">
+                <h2 hidden>Наші переваги</h2>
+                <ul class="technologies-section__list">
+                    <li class="technologies-section__item">
+                        <h3 class="technologies-section__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="technologies-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                    <li class="technologies-section__item">
+                        <h3 class="technologies-section__title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="technologies-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                    <li class="technologies-section__item">
+                        <h3 class="technologies-section__title">ПЛАНУВАННЯ</h3>
+                        <p class="technologies-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                    <li class="technologies-section__item">
+                        <h3 class="technologies-section__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="technologies-section__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                                    <!-- ourjob-section -->
+        <section class="ourjob-section">
+            <div class="container">
+                <h2 class="section-title">Чим ми займаємося</h2>
+                <ul class="ourjob-section__list">
+                    <li class="ourjob-section__item">
+                        <img src="./images/img1.jpg" alt="Фотографія з роботи" class="ourjob-section__image">
+                        <div class="ourjob-section__wrap">
+                            <p class="ourjob-section__title">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </li>
+                    <li class="ourjob-section__item">
+                        <img src="./images/img2.jpg" alt="Фотографія з роботи" class="ourjob-section__image">
+                        <div class="ourjob-section__wrap">
+                            <p class="ourjob-section__title">МОБІЛЬНІ ЗАСТОСУНКИ</p>
+                        </div>
+                    </li>
+                    <li class="ourjob-section__item">
+                        <img src="./images/img3.jpg" alt="Фотографія з роботи" class="ourjob-section__image">
+                        <div class="ourjob-section__wrap">
+                            <p class="ourjob-section__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                                    <!-- ourteam-section -->
+        <section class="ourteam-section">
+            <div class="container">
+                <h2 class="section-title">Наша команда</h2>
+                <ul class="ourteam-section__list">
+                    <li class="ourteam-section__item">
+                        <img src="./images/Ihor.jpg" alt="Ігор Дем’яненко" class="ourteam-section__photo">
+                        <h3 class="ourteam-section__name">Ігор Дем’яненко</h3>
+                        <p class="ourteam-section__job">Product Designer</p>
+                        <div class="ourteam-section__icon-list">
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
+                        </div>
+                    </li>
+                    <li class="ourteam-section__item">
+                        <img src="./images/Olga.jpg" alt="Ольга Репіна" class="ourteam-section__photo">
+                        <h3 class="ourteam-section__name">Ольга Репіна</h3>
+                        <p class="ourteam-section__job">Frontend Developer</p>
+                        <div class="ourteam-section__icon-list">
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
+                        </div>
+                    </li>
+                    <li class="ourteam-section__item">
+                        <img src="./images/Mikola.jpg" alt="Микола Тарасов" class="ourteam-section__photo">
+                        <h3 class="ourteam-section__name">Микола Тарасов</h3>
+                        <p class="ourteam-section__job">Marketing</p>
+                        <div class="ourteam-section__icon-list">
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
+                        </div>
+                    </li>
+                    <li class="ourteam-section__item">
+                        <img src="./images/Mihaylo.jpg" alt="Михайло Єрмаков" class="ourteam-section__photo">
+                        <h3 class="ourteam-section__name">Михайло Єрмаков</h3>
+                        <p class="ourteam-section__job">UI Designer</p>
+                        <div class="ourteam-section__icon-list">
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
+                            <svg class="ourteam-section__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                                <!-- partner-section -->
+        <section class="partner-section">
+            <div class="container">
+                <h2 class="section-title">Постійні клієнти</h2>
+                <ul>
+                    <li class="partner-section__item">
+                        <a href="./" class="partner-section__link"><svg class="partner-section__icon"><use href="./images/symbol-defs.svg#logo1"></use></svg></a>
+                    </li>
+                    <li class="partner-section__item">
+                        <a href="./" class="partner-section__link"><svg class="partner-section__icon"><use href="./images/symbol-defs.svg#logo2"></use></svg></a>
+                    </li>
+                    <li class="partner-section__item">
+                        <a href="./" class="partner-section__link"><svg class="partner-section__icon"><use href="./images/symbol-defs.svg#logo3"></use></svg></a>
+                    </li>
+                    <li class="partner-section__item">
+                        <a href="./" class="partner-section__link"><svg class="partner-section__icon"><use href="./images/symbol-defs.svg#logo4"></use></svg></a>
+                    </li>
+                    <li class="partner-section__item">
+                        <a href="./" class="partner-section__link"><svg class="partner-section__icon"><use href="./images/symbol-defs.svg#logo5"></use></svg></a>
+                    </li>
+                    <li class="partner-section__item">
+                        <a href="./" class="partner-section__link"><svg class="partner-section__icon"><use href="./images/symbol-defs.svg#logo6"></use></svg></a>
+                    </li>
+                </ul>
+            </div>
+        </section> 
+                                                <!-- footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>
+                <a href="/" class="footer__logo"><span>Web</span>Studio</a>
+                <address class="footer__address">
+                    м. Київ, пр-т Лесі Українки, 26 
+                </address>
+                <address>
+                    <a href="mailto:info@example.com" class="footer__contact" id="contact">info@example.com</a>
+                    <a href="tel:+380991111111" class="footer__contact">+38 099 111 11 11</a>
+                </address>
+            </div>
+            <div class="footer__icon-wrap">
+                <h4 class="footer__join">ПРИЄДНУЙТЕСЬ</h4>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#instagram"></use></svg>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#twitter"></use></svg>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#facebook"></use></svg>
+                <svg class="footer__icon"><use href="./images/symbol-defs.svg#linkedin"></use></svg>
+            </div>       
+            <div>
+                <form class="feedback-form">
+                    <span class="feedback-form__title">Підпишись на розсилку</span>
+                    <div class="feedback-form__wrap">
+                        <input placeholder="E-mail" class="feedback-form__input" type="email" />
+                        <button class="feedback-form__button" type="submit">
+                            Підписатися
+                            <svg class="feedback-form__icon"><use href="./images/symbol-defs.svg#send"></use></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </footer>
+    <script>
+        const refs = {
+          openModalBtn: document.querySelector("[data-open-modal]"),
+          closeModalBtn: document.querySelector("[data-close-modal]"),
+          backdrop: document.querySelector("[data-backdrop]"),
+        };
+  
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs.backdrop.classList.toggle("is-hidden");
+        }
+  
+        function logBackdropClick() {
+          console.log("Це клік в бекдроп");
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+.header {
+    
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        height: 60px;
+        padding: 0px;
+        border: 1px solid #ECECEC;
+        position: fixed;
+        background-color: $base-color;
+        z-index: 1;
+        ;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        height: 80px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 1140px;
+    }
+
+&__icon {
+    vertical-align: middle;
+    fill: currentColor;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 0px;
+        width: 14px;
+        height: 10px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+    }
+}
+
+&__mobile-menu {
+
+    @media screen and (min-width: 480px) {
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &__icon {
+        @media screen and (min-width: 480px) {
+            width: 24px;
+            height: 16px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+&__link {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    &:hover {
+        color: $main-color;
+        padding-bottom: 28px;
+        transition-duration: 500ms;
+        transition-delay: 250ms;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: $main-color;
+        width: 100%;
+        height: 4px;
+        display: block;
+        left: 0%;
+        bottom: -30px;
+        opacity: 0;
+        transform: scale(0);
+        transition: opacity 0,25s cubic-bezier(0.19, 1, 0.22, 1) 500ms, transform 0,25s cubic-bezier(0.19, 1, 0.22, 1) 500ms;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transform: scale(1);
+        transition-duration: 500ms;
+        transition-delay: 250ms;
+    }
+}
+
+&__item {
+    display: block;
+    position: relative;
+
+    // &:not(:last-child) {
+    //     margin-right: 55px;
+    // }
+}
+
+&__logo {
+    color:#000000;
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+   
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        margin-right: 93px;
+    }
+}
+
+&__list {    
+    @media screen and (min-width: 480px) {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 290px;
+        justify-content: space-between;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+}
+
+&__address {
+
+    @media screen and (min-width: 480px) {
+        
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 140px;
+        height: 37px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        weight: 307px;
+    }
+}
+
+&__logo-color {
+    color: $main-color;
+}
+
+&__contact {
+
+    @media screen and (min-width: 480px) {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+        color: #757575;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+    
+    &:hover {
+        color: $main-color;
+        transition-duration: 500ms;
+        transition-delay: 250ms;
+    }
+
+    &:first-child {
+        
+        @media screen and (min-width: 768px) {
+            margin-right: 0px;
+        }
+        
+        @media screen and (min-width: 1140px) {
+            margin-right: 50px;
+        }
+    }
+}
+}
+
+.header-container {
+    
+    
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 0px 0px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 738px;
+        height: 80px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        width: 1140px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        width: 511px;
+    }
+    
+    @media screen and (min-width: 1140px) {
+        
+    }
+}

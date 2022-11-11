@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Н"
+		},
+		{
+			"path": "../practice-sass"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practice-sass"
+	}
+}
