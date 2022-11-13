@@ -1,16 +1,41 @@
 .portfolio-list {
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 94px;
+   
+    @media screen and (min-width: 480px) {
+        margin-bottom: 60px;
+        display: block;
+    }
+    
+    @media screen and (min-width: 768px) {
+        
+    }
+    
+    @media screen and (min-width: 1140px) {
+        margin-bottom: 94px;
+    }
 
     &__item {
         position: relative;
         display: block;
-        width: 370px;
-        height: 404px;
+       
         border: 1px solid #eeeeee;
         margin-bottom: 30px;
         overflow: hidden;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 404px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            width: 370px;
+            height: 404px;
+        }
 
         &:hover .portfolio-list__item-hover{
             opacity: 1;
@@ -29,14 +54,27 @@
         top: 0px;
         left: 0px;
         background-color: rgba(33, 150, 243, 0.9);
-        width: 370px;
-        height: 294px;
+       
         margin-top: 0px;
         padding: 63px 24px;
         opacity: 1;
         transform: translate(-100%);
         transition-duration: 500ms;
         transition-delay: 250ms;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 294px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            width: 370px;
+            height: 294px;
+        }
     }
     
     &__item-hover-title {
@@ -47,9 +85,22 @@
     }
     
     &__img {
-        width: 370px;
-        height: 294px;
+       
         display: block;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 294px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            
+        }
+        
+        @media screen and (min-width: 1140px) {
+            width: 370px;
+            height: 294px;
+        }
     }
     
     &__text-wrap {
