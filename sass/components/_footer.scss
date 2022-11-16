@@ -9,11 +9,15 @@
     }
     
     @media screen and (min-width: 768px) {
-        
+            width: 768px;
+            height: 463px;
+            padding: 65px 89px 60px 89px;
     }
     
     @media screen and (min-width: 1140px) {
         padding: 72px 0px 60px 0px;
+        width: 1600px;
+        height: 252px;
     }
 
 &__icon-wrap {
@@ -25,12 +29,15 @@
     }
     
     @media screen and (min-width: 768px) {
-        
+        margin: 10px 0px 0px 165px;
+        width: 218px;
+        height: 80px;
     }
     
     @media screen and (min-width: 1140px) {
         width: 218px;
         height: 80px;
+        margin: 0px;
     }
 
     & h4 {
@@ -56,10 +63,12 @@
     }
     
     @media screen and (min-width: 1140px) {
-        
+        color: $base-color;
+        font-family: $second-font;
     }
 
     & span {
+        font-family: $second-font;
         color: $main-color;
     }
 }
@@ -135,11 +144,15 @@
     }
     
     @media screen and (min-width: 768px) {
-        
+        width: 450px;
+        height: 154px;
+        display: inline;
     }
     
     @media screen and (min-width: 1140px) {
-        
+        width: 570px;
+        height: 80px;
+        display: block;
     }
 
     &__title {
@@ -226,10 +239,25 @@
     }
     
     @media screen and (min-width: 768px) {
-        
+        display: flex;
+        flex-wrap: wrap;
     }
     
     @media screen and (min-width: 1140px) {
-        
+        flex-wrap: nowrap;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    & div:nth-child(3) {
+
+        @media screen and (min-width: 768px) {
+            margin-left: 76px;
+            margin-top: 54px;
+        }
+
+        @media screen and (min-width: 1140px) {
+            margin: 0px;
+        }
     }
 }

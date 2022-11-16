@@ -29,9 +29,31 @@
                         <svg class="header__icon"><use href="./images/symbol-defs.svg#smartphone"></use></svg>+38 096 111 11 11
                     </a>
             </address>
-            <button type="button" class="header__mobile-menu">
+            <button type="button" class="header__mobile-menu" data-open-modal-menu>
                 <svg class="header__mobile-menu__icon"><use href="./images/symbol-defs.svg#icon-menu"></use></svg>
             </button>
+
+                <form class="modal-menu is-hidden-menu" data-backdrop-menu>
+                    <button class="modal-menu__close-button" data-close-modal-menu>
+                        <svg class="modal-menu__close-icon"><use href="./images/symbol-defs.svg#icon-close"></use></svg>
+                    </button>
+                    <ul class="modal-menu__list">
+                        <li class="modal-menu__item"><a href="./">Студія</a></li>
+                        <li class="modal-menu__item"><a href="./portfolio.html">Портфоліо</a></li>
+                        <li class="modal-menu__item"><a href="#contact">Контакти</a></li>
+                    </ul>
+                    <address class="modal-menu__contact">
+                        <a href="tel:+380961111111" class="modal-menu__phone">+38 096 111 11 11</a>
+                        <a href="mailto:info@devstudio.com" class="modal-menu__mail">info@devstudio.com</a>
+                </address>
+                <ul class="modal-menu__social">
+                    <li class="modal-menu__social-item"><a href="./">Instagram</a></li>
+                    <li class="modal-menu__social-item"><a href="./">Twitter</a></li>
+                    <li class="modal-menu__social-item"><a href="./">Facebook</a></li>
+                    <li class="modal-menu__social-item"><a href="./">LinkedIn</a></li>
+                </ul>
+                </form>
+
         </div>
     </header>
                                                     <!-- main-section -->
@@ -257,6 +279,27 @@
   
         function toggleModal() {
           refs.backdrop.classList.toggle("is-hidden");
+        }
+  
+        function logBackdropClick() {
+          console.log("Це клік в бекдроп");
+        }
+      </script>
+
+      <script>
+        const refs1 = {
+          openModalBtn: document.querySelector("[data-open-modal-menu]"),
+          closeModalBtn: document.querySelector("[data-close-modal-menu]"),
+          backdrop: document.querySelector("[data-backdrop-menu]"),
+        };
+  
+        refs1.openModalBtn.addEventListener("click", toggleModal);
+        refs1.closeModalBtn.addEventListener("click", toggleModal);
+  
+        refs1.backdrop.addEventListener("click", logBackdropClick);
+  
+        function toggleModal() {
+          refs1.backdrop.classList.toggle("is-hidden-menu");
         }
   
         function logBackdropClick() {
