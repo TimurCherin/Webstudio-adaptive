@@ -6,17 +6,15 @@ body {
 }
 
 .container {
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 480px) {
         width: 450px;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     @media screen and (min-width: 768px) {
         width: 738px;
-        margin-left: auto;
-        margin-right: auto;
     }
     
     @media screen and (min-width: 1140px) {

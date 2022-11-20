@@ -1,8 +1,8 @@
 .portfolio-menu {  
+    display: flex;
+    flex-wrap: wrap;
 
     @media screen and (min-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
         margin-top: 60px;
         padding-bottom: 40px;
     }
@@ -19,10 +19,11 @@
     
     &__list {
         margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
 
         @media screen and (min-width: 480px) {
-            display: flex;
-            flex-wrap: wrap;
+
         }
         
         @media screen and (min-width: 768px) {

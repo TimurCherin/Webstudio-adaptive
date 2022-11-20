@@ -1,17 +1,17 @@
 .footer {
+    background-color: #2F303A;
+    display: flex;
 
     @media screen and (min-width: 480px) {
-        background-color: #2F303A;
         width: 480px;
         height: 603px;
         padding: 60px 0px;
-        display: flex;
     }
     
     @media screen and (min-width: 768px) {
-            width: 768px;
-            height: 463px;
-            padding: 65px 89px 60px 89px;
+        width: 768px;
+        height: 463px;
+        padding: 65px 89px 60px 89px;
     }
     
     @media screen and (min-width: 1140px) {
@@ -21,22 +21,20 @@
     }
 
 &__icon-wrap {
+    height: 80px;
 
     @media screen and (min-width: 480px) {
         width: 450px;
-        height: 80px;
         margin: 60px 0px;
     }
     
     @media screen and (min-width: 768px) {
         margin: 10px 0px 0px 165px;
         width: 218px;
-        height: 80px;
     }
     
     @media screen and (min-width: 1140px) {
         width: 218px;
-        height: 80px;
         margin: 0px;
     }
 
@@ -53,9 +51,10 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     margin: 0px 0px 20px 0px;
+    text-align: center;
 
     @media screen and (min-width: 480px) {
-        text-align: center;
+
     }
     
     @media screen and (min-width: 768px) {
@@ -82,18 +81,6 @@
     margin-bottom: 9px;
     margin-top: 20px;
     font-style: normal;
-
-    @media screen and (min-width: 480px) {
-        
-    }
-    
-    @media screen and (min-width: 768px) {
-        
-    }
-    
-    @media screen and (min-width: 1140px) {
-        
-    }
 }
 
 &__contact {
@@ -209,11 +196,11 @@
         text-align: center; 
         letter-spacing: 0.06em;
         color: $base-color;
+        margin-right: auto;
+        margin-left: auto;
 
         @media screen and (min-width: 480px) {
             margin-top: 20px;
-            margin-right: auto;
-            margin-left: auto;
         }
         
         @media screen and (min-width: 768px) {
