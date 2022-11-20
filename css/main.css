@@ -1191,12 +1191,14 @@ label {
 
 .ourteam-section {
   background-color: #F5F4FA;
+  max-width: 480px;
+  max-height: 2761px;
+  padding: 60px 15px;
 }
 @media screen and (min-width: 480px) {
   .ourteam-section {
     width: 480px;
     height: 2761px;
-    padding: 60px 15px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1215,6 +1217,8 @@ label {
 }
 .ourteam-section__photo {
   display: block;
+  max-width: 450px;
+  max-height: 460px;
 }
 @media screen and (min-width: 480px) {
   .ourteam-section__photo {
@@ -1234,10 +1238,8 @@ label {
     height: 260px;
   }
 }
-@media screen and (min-width: 480px) {
-  .ourteam-section__list {
-    display: block;
-  }
+.ourteam-section__list {
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .ourteam-section__list {
@@ -1253,8 +1255,6 @@ label {
 }
 @media screen and (min-width: 1140px) {
   .ourteam-section__list {
-    width: 270px;
-    height: 260px;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
   }
@@ -1264,6 +1264,9 @@ label {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+  max-height: 622px;
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 480px) {
   .ourteam-section__item {
@@ -1279,12 +1282,16 @@ label {
 }
 @media screen and (min-width: 1140px) {
   .ourteam-section__item {
-    margin-right: 30px;
     height: 428px;
   }
 }
 .ourteam-section__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1140px) {
+  .ourteam-section__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .ourteam-section__name {
   font-weight: 500;
@@ -1599,10 +1606,8 @@ label {
   color: #ffffff;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
-  .feedback-form__wrap {
-    display: block;
-  }
+.feedback-form__wrap {
+  display: block;
 }
 @media screen and (min-width: 1140px) {
   .feedback-form__wrap {
