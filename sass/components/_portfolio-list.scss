@@ -1,27 +1,28 @@
 .portfolio-list {
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 60px;
 
     @media screen and (min-width: 480px) {
-        margin-bottom: 60px;
+        
      }
      
      @media screen and (min-width: 768px) {
         display: flex;
      }
      
-     @media screen and (min-width: 1140px) {
+     @media screen and (min-width: 1200px) {
         margin-bottom: 94px;
      }
 
     &__item {
         position: relative;
         display: block;
-        height: 404px;
         border: 1px solid #eeeeee;
         overflow: hidden;
 
         @media screen and (min-width: 480px) {
+            height: 404px;
             width: 450px;
          }
          
@@ -30,7 +31,7 @@
             height: 404px;
          }
          
-         @media screen and (min-width: 1140px) {
+         @media screen and (min-width: 1200px) {
             width: 370px;
          }
 
@@ -40,7 +41,7 @@
                 margin-right: 30px;
             }
             
-            @media screen and (min-width: 1140px) {
+            @media screen and (min-width: 1200px) {
                 margin-right: 0;
             }
         } 
@@ -52,6 +53,7 @@
         &:hover .portfolio-list__item-hover{
             opacity: 1;
             transform: translate(0);
+            height: 73%;
         }
 
         &:hover {
@@ -65,24 +67,24 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        height: 294px;
         background-color: rgba(33, 150, 243, 0.9);
         margin-top: 0px;
-        padding: 63px 24px;
         opacity: 1;
+        padding: 63px 24px;
         transform: translate(-100%);
         transition-duration: 500ms;
         transition-delay: 250ms;
 
         @media screen and (min-width: 480px) {
             width: 450px;
+            height: 294px;
          }
          
          @media screen and (min-width: 768px) {
             width: 354px;
          }
          
-         @media screen and (min-width: 1140px) {
+         @media screen and (min-width: 1200px) {
             width: 370px;
          }
     }
@@ -96,9 +98,10 @@
     
     &__img {
         display: block;
-        height: 294px;
+        width: 100%;
 
         @media screen and (min-width: 480px) {
+            height: 294px;
             width: 450px;
          }
          
@@ -106,25 +109,25 @@
             width: 354px;
          }
          
-         @media screen and (min-width: 1140px) {
+         @media screen and (min-width: 1200px) {
             width: 370px;
          }
     }
     
     &__text-wrap {
         padding: 20px 24px;
-        height: 110px;
         text-align: left;
 
         @media screen and (min-width: 480px) {
             width: 450px;
+            height: 110px;
         }
         
         @media screen and (min-width: 768px) {
            width: 354px;
         }
         
-        @media screen and (min-width: 1140px) {
+        @media screen and (min-width: 1200px) {
            width: 370px;
         }
     }
