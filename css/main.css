@@ -551,7 +551,6 @@ nav {
 }
 @media screen and (min-width: 480px) {
   .modal-menu {
-    width: 480px;
     height: 796px;
   }
 }
@@ -1148,8 +1147,8 @@ label {
   .section-title {
     font-size: 28px;
     line-height: 1.7;
-    margin: 0px 0px 33px 0px;
-    height: 36px;
+    margin: 0px 0px 30px 0px;
+    height: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1879,7 +1878,7 @@ label {
   }
 }
 .portfolio-list__text-wrap {
-  padding: 20px 24px;
+  padding: 20px 0px 20px 24px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
