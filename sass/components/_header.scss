@@ -53,6 +53,12 @@
         display: none;
     }
 
+    &:hover .header__mobile-menu__icon {
+        fill: $main-color;
+        transition-duration: 500ms;
+        transition-delay: 250ms;
+    }
+
     &__icon {
         width: 24px;
         height: 16px;   
@@ -252,8 +258,8 @@ nav {
 }
 
 .is-hidden-menu {
-    display: none;
-    transform: scale(0);
+    display: block;
+    transform: scale(0) rotate(180deg);
 }
 
 .modal-menu {
@@ -267,9 +273,8 @@ nav {
     z-index: 1000;
     overflow-y: scroll;
     width: 100%;
-    transform: scale(1);
     transition-duration: 500ms;
-    transition-delay: 250ms;
+    transition-duration: 800ms;
 
     @media screen and (min-width: 480px) {
         height: 796px;
@@ -372,3 +377,4 @@ nav {
         }
     }
 }
+
