@@ -527,6 +527,8 @@ nav {
 }
 .is-hidden-menu {
   display: none;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .modal-menu {
@@ -541,6 +543,11 @@ nav {
           transition-delay: 250ms;
   z-index: 1000;
   overflow-y: scroll;
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition-duration: 500ms;
+  transition-delay: 250ms;
 }
 @media screen and (min-width: 480px) {
   .modal-menu {
@@ -762,7 +769,7 @@ nav {
   padding: 40px;
   background-color: #ffffff;
   left: 50%;
-  top: 50%;
+  top: 55%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: 450px;
@@ -1587,12 +1594,20 @@ label {
   margin-right: 12px;
   padding-left: 15px;
   color: #ffffff;
+  cursor: pointer;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
 }
 @media screen and (min-width: 480px) {
   .feedback-form__input {
     width: 450px;
     height: 50px;
   }
+}
+.feedback-form__input:hover {
+  border-color: #2196F3;
 }
 .feedback-form__button {
   width: 200px;
@@ -1617,6 +1632,7 @@ label {
   margin-right: auto;
   margin-left: auto;
   margin-top: 20px;
+  border: none;
 }
 @media screen and (min-width: 1200px) {
   .feedback-form__button {

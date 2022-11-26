@@ -253,7 +253,9 @@ nav {
 
 .is-hidden-menu {
     display: none;
+    transform: scale(0);
 }
+
 .modal-menu {
     position: fixed;
     top: 0px;
@@ -264,6 +266,10 @@ nav {
     transition-delay: 250ms;
     z-index: 1000;
     overflow-y: scroll;
+    width: 100%;
+    transform: scale(1);
+    transition-duration: 500ms;
+    transition-delay: 250ms;
 
     @media screen and (min-width: 480px) {
         width: 480px;
