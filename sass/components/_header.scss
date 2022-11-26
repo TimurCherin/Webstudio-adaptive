@@ -25,6 +25,7 @@
 &__icon {
     vertical-align: middle;
     fill: currentColor;
+    animation: rotateX 1500ms infinite alternate ease-in-out 1000ms;
 
     @media screen and (min-width: 768px) {
         margin-right: 8px;
@@ -377,4 +378,14 @@ nav {
         }
     }
 }
+
+  @keyframes rotateX {
+    0% {
+      transform: perspective(400px) rotateX(0deg);
+    }
+  
+    100% {
+      transform: perspective(400px) rotateX(60deg);
+    }
+  }
 
