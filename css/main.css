@@ -318,6 +318,10 @@ a {
     height: 12px;
   }
 }
+.header__icon:not(:last-child) {
+  width: 10px;
+  height: 16px;
+}
 .header__mobile-menu {
   width: 40px;
   height: 40px;
@@ -1205,15 +1209,14 @@ label {
 }
 .ourteam-section__list {
   display: block;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   .ourteam-section__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -1276,9 +1279,10 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 32px;
 }
 .ourteam-section__icon {
   width: 44px;

@@ -37,6 +37,11 @@
         width: 16px;
         height: 12px;
     }
+
+    &:not(:last-child) {
+        width: 10px;
+        height: 16px;
+    }
 }
 
 &__mobile-menu {
@@ -314,6 +319,7 @@ nav {
         line-height: 1.18;
         letter-spacing: 0.02em;
         color: black;
+        
     }
     
     & li:not(:last-child) {
