@@ -25,6 +25,7 @@
 &__icon {
     vertical-align: middle;
     fill: currentColor;
+    animation: rotateX 1500ms infinite alternate ease-in-out 1000ms;
 
     @media screen and (min-width: 768px) {
         margin-right: 8px;
@@ -56,6 +57,12 @@
     
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    &:hover .header__mobile-menu__icon {
+        fill: $main-color;
+        transition-duration: 500ms;
+        transition-delay: 250ms;
     }
 
     &__icon {
@@ -257,8 +264,8 @@ nav {
 }
 
 .is-hidden-menu {
-    display: none;
-    transform: scale(0);
+    display: block;
+    transform: scale(0) rotate(180deg);
 }
 
 .modal-menu {
@@ -267,14 +274,11 @@ nav {
     left: 0px;
     padding: 48px 83px 48px 40px;
     background-color: white;
-    transition-duration: 500ms;
+    transition-duration: 800ms;
     transition-delay: 250ms;
     z-index: 1000;
     overflow-y: scroll;
     width: 100%;
-    transform: scale(1);
-    transition-duration: 500ms;
-    transition-delay: 250ms;
 
     @media screen and (min-width: 480px) {
         height: 796px;
@@ -378,3 +382,14 @@ nav {
         }
     }
 }
+
+  @keyframes rotateX {
+    0% {
+      transform: perspective(400px) rotateX(0deg);
+    }
+  
+    100% {
+      transform: perspective(400px) rotateX(60deg);
+    }
+  }
+
