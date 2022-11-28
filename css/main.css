@@ -334,6 +334,13 @@ a {
     display: none;
   }
 }
+.header__mobile-menu:hover .header__mobile-menu__icon {
+  fill: #2196F3;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
+}
 .header__mobile-menu__icon {
   width: 24px;
   height: 16px;
@@ -530,9 +537,9 @@ nav {
   }
 }
 .is-hidden-menu {
-  display: none;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  display: block;
+  -webkit-transform: scale(0) rotate(180deg);
+          transform: scale(0) rotate(180deg);
 }
 
 .modal-menu {
@@ -541,17 +548,13 @@ nav {
   left: 0px;
   padding: 48px 83px 48px 40px;
   background-color: white;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 800ms;
+          transition-duration: 800ms;
   -webkit-transition-delay: 250ms;
           transition-delay: 250ms;
   z-index: 1000;
   overflow-y: scroll;
   width: 100%;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  transition-duration: 500ms;
-  transition-delay: 250ms;
 }
 @media screen and (min-width: 480px) {
   .modal-menu {
@@ -623,6 +626,7 @@ nav {
   color: #757575;
   margin-bottom: 32px;
   margin-top: 306px;
+  font: optional;
 }
 .modal-menu__phone:hover {
   color: #2196F3;
@@ -633,6 +637,7 @@ nav {
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: 32px;
+  font: optional;
 }
 .modal-menu__social {
   margin-top: 64px;
@@ -651,6 +656,27 @@ nav {
   color: #2196F3;
 }
 
+@-webkit-keyframes rotateX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(60deg);
+            transform: perspective(400px) rotateX(60deg);
+  }
+}
+
+@keyframes rotateX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+            transform: perspective(400px) rotateX(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateX(60deg);
+            transform: perspective(400px) rotateX(60deg);
+  }
+}
 .main-indent {
   height: 60px;
   width: 100vw;
@@ -1341,6 +1367,8 @@ label {
   border-radius: 4px;
   width: 210px;
   height: 90px;
+  -webkit-animation: rotateY 4000ms infinite alternate backwards ease-in-out 1000ms;
+          animation: rotateY 4000ms infinite alternate backwards ease-in-out 1000ms;
 }
 @media screen and (min-width: 768px) {
   .partner-section__item {
@@ -1426,6 +1454,27 @@ label {
   fill: currentColor;
 }
 
+@-webkit-keyframes rotateY {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(60deg);
+            transform: perspective(400px) rotateY(60deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateY(-60deg);
+            transform: perspective(400px) rotateY(-60deg);
+  }
+}
+
+@keyframes rotateY {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(60deg);
+            transform: perspective(400px) rotateY(60deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px) rotateY(-60deg);
+            transform: perspective(400px) rotateY(-60deg);
+  }
+}
 .footer {
   background-color: #2F303A;
   display: -webkit-box;
