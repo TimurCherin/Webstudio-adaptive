@@ -35,11 +35,11 @@
     @media screen and (min-width: 1200px) {
         margin-right: 10px;
         width: 16px;
-        height: 12px;
+        height: 15px;
     }
 
     &:not(:last-child) {
-        width: 10px;
+        width: 50px;
         height: 16px;
     }
 }
