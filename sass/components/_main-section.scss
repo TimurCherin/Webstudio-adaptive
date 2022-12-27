@@ -35,32 +35,58 @@
 }
 
 .main-section {
-    height: 400px;
-    // width: 480px;
-    padding: 118px 0px;
-    background-size: cover;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-    ), url("../images/main.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
+    
 
     @media screen and (min-width: 480px) {
+        height: 400px;
+        // width: 480px;
+        padding: 118px 0px;
+        background-size: cover;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url("../../images/mobile-1x/mobile1x.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        @media screen and (min-resolution: 2dppx), 
+        (min-resolution: 192dpi),
+        (min-device-pixel-ratio: 2) {
+            background-image: url(../../images/mobile2x/mobile2x.png);
+        }
     }
     
     @media screen and (min-width: 768px) {
         // width: 768px;
         height: 400px;  
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url("../../images/tablet-1x/tablet1x.png");
+        @media screen and (min-resolution: 2dppx), 
+        (min-resolution: 192dpi),
+        (min-device-pixel-ratio: 2) {
+            background-image: url(../../images/tablet2x/tablet2x.png);
+        }
     }
     
     @media screen and (min-width: 1200px) {
         // width: 1600px;
         height: 600px;
         padding: 200px 0px;
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ), url("../../images/desctop-1x/desctop1x.png");
+        @media screen and (min-resolution: 2dppx), 
+        (min-resolution: 192dpi),
+        (min-device-pixel-ratio: 2) {
+            background-image: url(../../images/desctop-2x/desctop2x.png);
+        }
     }
     
     & h1 {
