@@ -74,27 +74,27 @@
                     <label class="modal-form__label">
                         Ім'я
                         <span class="modal-form__span">
-                            <input class="modal-form__input" type="text" name="username" autofocus />
+                            <input class="modal-form__input" type="text" name="username" autofocus required />
                             <svg class="modal-form__icon"><use href="./images/symbol-defs.svg#modal-person"></use></svg>
                         </span>
                     </label>
                     <label class="modal-form__label">
                         Телефон
                         <span class="modal-form__span">
-                            <input class="modal-form__input" type="tel" name="phone_number" />
+                            <input class="modal-form__input" type="tel" name="phone_number" required/>
                             <svg class="modal-form__icon"><use href="./images/symbol-defs.svg#modal-phone"></use></svg>
                         </span>
                     </label>
                     <label class="modal-form__label">
                     Пошта
                     <span class="modal-form__span">
-                        <input class="modal-form__input" type="email" name="email" />
+                        <input class="modal-form__input" type="email" name="email" required/>
                         <svg class="modal-form__icon"><use href="./images/symbol-defs.svg#modal-email"></use></svg>
                     </span>      
                     </label>    
                     <label class="modal-form__label">
                         Коментарі
-                        <textarea class="modal-form__text__area" name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                        <textarea class="modal-form__text__area" name="feedback" rows="5" placeholder="Введите текст" required></textarea>
                     </label>
                     <label class="modal-form__checkbox">
                         <input type="checkbox" name="" checked />
@@ -160,10 +160,10 @@
                 <ul class="ourteam-section__list">
                     <li class="ourteam-section__item">
                         <picture>
-                        <source srcset="./images/team1-desktop@1x.png 1x, ./images/team1-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
-                        <source srcset="./images/team1-tablet@1x.png 1x, ./images/team1-tablet@2x.png 2x" media="(min-width: 768px)"/>     
-                        <source srcset="./images/team1-mobile@1x.png 1x, ./images/team1-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
-                        <img srcset="./images/team1-desktop@1x.png 1x, ./images/team1-desktop@2x.png 2x" src="./images/desctop-1x/team1-desktop@1x.png" alt="Ігор Дем’яненко" class="ourteam-section__photo">
+                        <source srcset="./images/desctop-1x/team1-desktop@1x.png 1x, ./images/desctop-2x/team1-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
+                        <source srcset="./images/tablet-1x/team1-desktop@1x.png 1x, ./images/tablet-2x/team1-tablet@2x.png 2x" media="(min-width: 768px)"/>     
+                        <source srcset="./images/mobile-1x/team1-desktop@1x.png 1x, ./images/mobile-1x/team1-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
+                        <img srcset="./images/desctop-1x/team1-desktop@1x.png 1x, ./images/desctop-2x/team1-desktop@2x.png 2x" src="./images/desctop-1x/team1-desktop@1x.png" alt="Ігор Дем’яненко" class="ourteam-section__photo">
                         </picture>
                         <h3 class="ourteam-section__name">Ігор Дем’яненко</h3>
                         <p class="ourteam-section__job">Product Designer</p>
@@ -176,10 +176,10 @@
                     </li>
                     <li class="ourteam-section__item">
                         <picture>
-                        <source srcset="./images/team2-desktop@1x.png 1x, ./images/team2-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
-                        <source srcset="./images/team2-tablet@1x.png 1x, ./images/team2-tablet@2x.png 2x" media="(min-width: 768px)"/>     
-                        <source srcset="./images/team2-mobile@1x.png 1x, ./images/team2-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
-                        <img srcset="./images/team2-desktop@1x.png 1x, ./images/team2-desktop@2x.png 2x" src="./images/desctop-1x/team2-desktop@1x.png" alt="Ольга Репіна" class="ourteam-section__photo">
+                        <source srcset="./images/desctop-1x/team2-desktop@1x.png 1x, ./images/desctop-2x/team2-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
+                        <source srcset="./images/tablet-1x/team2-tablet@1x.png 1x, ./images/tablet-2x/team2-tablet@2x.png 2x" media="(min-width: 768px)"/>     
+                        <source srcset="./images/mobile-1x/team2-mobile@1x.png 1x, ./images/mobile-2x/team2-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
+                        <img srcset="./images/desctop-1x/team2-desktop@1x.png 1x, ./images/desctop-2x/team2-desktop@2x.png 2x" src="./images/desctop-1x/team2-desktop@1x.png" alt="Ольга Репіна" class="ourteam-section__photo">
                         </picture>
                         <h3 class="ourteam-section__name">Ольга Репіна</h3>
                         <p class="ourteam-section__job">Frontend Developer</p>
@@ -192,10 +192,10 @@
                     </li>
                     <li class="ourteam-section__item">
                         <picture>
-                        <source srcset="./images/team3-desktop@1x.png 1x, ./images/team3-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
-                        <source srcset="./images/team3-tablet@1x.png 1x, ./images/team3-tablet@2x.png 2x" media="(min-width: 768px)"/>     
-                        <source srcset="./images/team3-mobile@1x.png 1x, ./images/team3-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
-                        <img srcset="./images/team3-desktop@1x.png 1x, ./images/team3-desktop@2x.png 2x" src="./images/desctop-1x/team3-desktop@1x.png" alt="Микола Тарасов" class="ourteam-section__photo">
+                        <source srcset="./images/desctop-1x/team3-desktop@1x.png 1x, ./images/desctop-2x/team3-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
+                        <source srcset="./images/tablet-1x/team3-tablet@1x.png 1x, ./images/tablet-2x/team3-tablet@2x.png 2x" media="(min-width: 768px)"/>     
+                        <source srcset="./images/mobile-1x/team3-mobile@1x.png 1x, ./images/mobile-2x/team3-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
+                        <img srcset="./images/desctop-1x/team3-desktop@1x.png 1x, ./images/desctop-2x/team3-desktop@2x.png 2x" src="./images/desctop-1x/team3-desktop@1x.png" alt="Микола Тарасов" class="ourteam-section__photo">
                         </picture>
                         <h3 class="ourteam-section__name">Микола Тарасов</h3>
                         <p class="ourteam-section__job">Marketing</p>
@@ -208,10 +208,10 @@
                     </li>
                     <li class="ourteam-section__item">
                         <picture>
-                        <source srcset="./images/team4-desktop@1x.png 1x, ./images/team4-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
-                        <source srcset="./images/team4-tablet@1x.png 1x, ./images/team4-tablet@2x.png 2x" media="(min-width: 768px)"/>     
-                        <source srcset="./images/team4-mobile@1x.png 1x, ./images/team4-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
-                        <img srcset="./images/team4-desktop@1x.png 1x, ./images/team4-desktop@2x.png 2x" src="./images/desctop-1x/team4-desktop@1x.png" alt="Михайло Єрмаков" class="ourteam-section__photo">
+                        <source srcset="./images/desctop-1x/team4-desktop@1x.png 1x, ./images/desctop-2x/team4-desktop@2x.png 2x" media="(min-width: 1200px)"/> 
+                        <source srcset="./images/tablet-1x/team4-tablet@1x.png 1x, ./images/tablet-2x/team4-tablet@2x.png 2x" media="(min-width: 768px)"/>     
+                        <source srcset="./images/mobile-1x/team4-mobile@1x.png 1x, ./images/mobile-2x/team4-mobile@2x.png 2x" media="(max-width: 767px)"/>                         
+                        <img srcset="./images/desctop-1x/team4-desktop@1x.png 1x, ./images/desctop-2x/team4-desktop@2x.png 2x" src="./images/desctop-1x/team4-desktop@1x.png" alt="Михайло Єрмаков" class="ourteam-section__photo">
                         </picture>
                         <h3 class="ourteam-section__name">Михайло Єрмаков</h3>
                         <p class="ourteam-section__job">UI Designer</p>
